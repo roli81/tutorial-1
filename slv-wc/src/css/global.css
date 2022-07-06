@@ -1,0 +1,27 @@
+
+
+html {
+    font-family: 'Nunito', ARial;
+   background-color: lightgrey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.wrapper {
+    width: 80%;
+    margin: 8em auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div.text-container {
+    width: 60%;
+}
+
+div.lis-container {
+    width: 40%;
+}
+
