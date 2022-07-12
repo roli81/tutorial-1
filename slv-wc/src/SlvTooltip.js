@@ -96,9 +96,23 @@ export default class SlvTooltip extends HTMLElement {
             .querySelector('i.cancel')
             .addEventListener('click', () => { this.tooltip(false); });
 
+
+
         this.shadowRoot
             .querySelector('button.action-button')
-            .addEventListener('click', () => { this.dispatchEvent(new CustomEvent('test', { bubbles: true, cancelable: false })); });
+            .addEventListener('click', () => {
+
+                debugger;
+
+                this.dispatchEvent(new CustomEvent('addItem', {
+                    bubbles: true,
+                    cancelable: false,
+                    detail: {
+                        subject: this.getAttribute('subject'),
+                        value: this.getAttribute('value')
+                    }
+                }));
+            });
     }
 
     disconnectCallback() {

@@ -20,20 +20,35 @@
       <div class="text-container">
         <h1>my awesome tooltip</h1>
         <div>
-          Lorem ipsum dolor sit amet
-          <slv-tooltip>
-            <div>
-              <h2>My Tooltip</h2>
-              <p>with paragraph</p>
-              <a href="#">and link</a>
-            </div>
-          </slv-tooltip>
-          , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-          takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-          accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-          dolor sit amet.
+
+
+          <div>
+
+            Der Apfel fällt
+            <slv-tooltip value="1" subject="Apfel">
+              <div>
+                <p>
+                  Der Kulturapfel (Malus domestica Borkh., Synonym: Pyrus malus L.) ist eine weithin bekannte Art aus der Gattung der Äpfel in der Familie der Rosengewächse (Rosaceae). Er ist eine wirtschaftlich sehr bedeutende Obstart. Die Frucht des Apfelbaumes wird Apfel (regional als Appel) genannt.
+                </p>
+              </div>
+            </slv-tooltip>
+            nicht weit vom Stamm! <slv-tooltip value="2" subject="Stamm">
+              <div>
+                <p>
+                  Als Baum (von westgerm. mhd., ahd. boum, Herkunft ungeklärt[1], Teil der Swadesh-Liste; im Behördendeutsch auch Großgrün[2]) wird im allgemeinen Sprachgebrauch eine verholzte Pflanze verstanden, die aus einer Wurzel, einem daraus emporsteigenden, hochgewachsenen Stamm und einer belaubten Krone besteh
+                </p>
+              </div>
+            </slv-tooltip>
+          </div>
+          <div>
+            Warum ist die Banane <slv-tooltip value="3" subject="Banane">
+              <div>
+                <p>
+                  Die Bananen (Musa), veraltet Paradiesfeigen, sind eine Pflanzengattung in der Familie der Bananengewächse (Musaceae) innerhalb der Einkeimblättrigen Pflanzen (Monokotyledonen). Die etwa 70 Arten stammen – bis auf eine Art in Tansania – alle aus dem tropischen bis subtropischen Asien und westlichen Pazifikraum.[1]
+                </p>
+              </div>
+            </slv-tooltip> krummm
+          </div>
         </div>
       </div>
       <div class="list-container">
@@ -41,8 +56,6 @@
       </div>
     </div>
   </slv-app-controller>
-
-
   <script type="module" src="./src/wc-loader.js"></script>
 </body>
 
