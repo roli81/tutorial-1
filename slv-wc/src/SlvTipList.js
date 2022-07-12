@@ -9,8 +9,6 @@ html.innerHTML = /* html */ `
     </style>
     <h2>My funny Tiplist</h2>
 
-
-
     <ul class="tip-list">
         
     </ul>
@@ -31,7 +29,7 @@ export default class SlvTipList extends HTMLElement {
 
     }
 
-    disconnectCallback() {
+    disconnectedCallback() {
 
     }
 
